@@ -5,3 +5,15 @@ dependencies:
   - jupyter-book
   - jupyterlab
   - sphinx-pythia-theme
+  - uxarray
+  - tobac
+  - cartopy
+  - matplotlib
+  - pathlib
+  - numpy
+  - pandas 
+  - xesmf
+  - esmpy
+  - netcdf4
+  - dask 
+  
