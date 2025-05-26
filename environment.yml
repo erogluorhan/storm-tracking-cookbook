@@ -2,6 +2,7 @@ name: storm-tracking-cookbook-dev
 channels:
   - conda-forge
 dependencies:
+  - python=3.10
   - jupyter-book
   - jupyterlab
   - sphinx-pythia-theme
@@ -11,9 +12,10 @@ dependencies:
   - matplotlib
   - pathlib
   - numpy
-  - pandas 
-  - xesmf
-  - esmpy
+  - pandas
+  - dask
   - netcdf4
-  - dask 
+  - xarray
+  - xesmf
+  - esmpy=8.4.2
   
