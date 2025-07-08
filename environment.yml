@@ -1,4 +1,4 @@
-name: storm-tracking-cookbook-dev
+name: storm-tracking
 channels:
   - conda-forge
 dependencies:
@@ -6,10 +6,12 @@ dependencies:
   - jupyter-book
   - jupyterlab
   - sphinx-pythia-theme
-  - uxarray
   - tobac
+  - matplotlib=3.7.1
+  - pillow=9.4.0
+  - libtiff=4.5.0
+  - libjpeg-turbo 
   - cartopy
-  - matplotlib
   - pathlib
   - numpy
   - pandas
