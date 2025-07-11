@@ -3,21 +3,21 @@ channels:
   - conda-forge
 dependencies:
   - python=3.10
+  - cartopy
+  - dask
+  - esmpy=8.4.2
   - jupyter-book
   - jupyterlab
-  - sphinx-pythia-theme
-  - tobac
-  - matplotlib=3.7.1
-  - pillow=9.4.0
-  - libtiff=4.5.0
   - libjpeg-turbo 
-  - cartopy
-  - pathlib
+  - libtiff=4.5.0
+  - matplotlib=3.7.1
+  - mystmd
+  - netcdf4
   - numpy
   - pandas
-  - dask
-  - netcdf4
+  - pathlib
+  - pillow=9.4.0
+  - tobac
   - xarray
   - xesmf
-  - esmpy=8.4.2
   
