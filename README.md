@@ -1,4 +1,4 @@
-# Storm Tracking Cookbook
+# Tracking and Object-Based Analysis of Clouds in Global Km-scale Model Simulations
 
 <img src="thumbnail.png" alt="thumbnail" width="300"/>
 
@@ -10,11 +10,22 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+High-resolution weather and climate model simulations are becoming increasingly common, providing valuable insights into atmospheric processes at kilometer-scale resolution. One effective way to analyze the output from such simulations is to track storm systems over time and space and evaluate their statistical properties.
+
+However, many state-of-the-art kilometer-scale models—such as MPAS (Model for Prediction Across Scales)—produce output on unstructured grids, which poses a challenge for many existing storm-tracking algorithms. One such tool is tobac (Tracking and Object-Based Analysis of Clouds), which typically operates on regular, structured grids.
+
+In this notebook, we demonstrate a straightforward workflow to:
+
+Regrid global km-scale output from the MPAS model to a structured grid suitable for object-based analysis.
+
+Apply the tobac tracking algorithm to identify and track storm features.
+
+This example provides a starting point for researchers looking to integrate high-resolution unstructured model output into their storm tracking and statistical analysis workflows.
+
 
 ## Authors
 
-[First Author](@first-author), [Second Author](@second-author), etc. _Acknowledge primary content authors here_
+[Julia Kukulies](@first-author), [Orhan Eroglu](@second-author), etc. _Acknowledge primary content authors here_
 
 ### Contributors
 
@@ -26,13 +37,27 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 (State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+### Introduction to tobac
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+This notebook gives an introduction to the tracking algorithm tobac (Tracking and Object-Based Analysis of Clouds). 
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+###  Introduction to MPAS
 
-(Add content for this section, e.g., "Example workflows include ... ")
+This notebook gives an introduction to MPAS (Model Prediction Across Scales) and the unstructured grids produces by the MPAS model. 
+
+### Preprocessing of MPAS data 
+
+Here, we show a workflow based on the library xesmf to regrid the unstructured data onto a regular grid and save a sub-selection of variables from the original model output data. This preprocessing step is necessary, in order to run the tracking algorithm tobac with MPAS data. 
+
+
+### Storm tracking with tobac
+
+In this notebook, we go through the three main module of the tobac library that provide a framework for storm tracking in the high-resolution model data. Specifically, we demonstrate how to first detect features based on customized thresholds and criteria, then define the extent of the storm objects and track the identified storm objects over time. 
+
+### Output analysis and visualization
+
+Finally, we show a simple example for how the output data of the storm tracking can be analyzed and visualized. 
+
 
 ## Running the Notebooks
 

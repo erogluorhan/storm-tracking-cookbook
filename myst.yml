@@ -2,20 +2,33 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
-  title: Storm Tracking Cookbook
+  title: Tracking and Object-Based Analysis of Clouds in Global Km-scale Model Simulations
   authors:
     - name: Project Pythia Community
       url: https://projectpythia.org/
+    - name: Julia Kukulies, Orhan Eroglu 
   github: https://github.com/projectpythia/storm-tracking-cookbook
   copyright: '2025'
   toc:
     - file: README.md
     - title: Preamble
       children:
-        - file: notebooks/how-to-cite.md
-    - title: Introduction
+      - file: notebooks/how-to-cite.md
+    - title: Introduction to tobac
       children:
-        - file: notebooks/notebook-template.ipynb
+        - file: notebooks/00-tobac.ipynb
+    - title: Introduction to MPAS
+      children:
+        - file: notebooks/01-mpas.ipynb
+    - title: Preprocessing of MPAS data 
+      children:
+        - file: notebooks/02-preprocessing.ipynb
+    - title: Storm tracking with tobac
+      children:
+        - file: notebooks/03-storm-tracking.ipynb
+    - title: Output analysis and visualization
+      children:
+        - file: notebooks/04-output-visualization.ipynb
   jupyter:
       binder:
         repo: projectpythia/storm-tracking-cookbook
