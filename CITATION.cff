@@ -2,17 +2,16 @@ cff-version: 1.2.0
 message: "If you use this cookbook, please cite it as below."
 authors:
   # add additional entries for each author -- see https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
-  - family-names: Last
-    given-names: First
-    orcid: https://orcid.org/xxxx-xxxx-xxxx-xxxx # optional
-    website: URL # optional
-    affiliation: Affiliation # optional
-  - family-names: Last 2
-    given-names: First 2
-    orcid: https://orcid.org/yyyy-yyyy-yyyy-yyyy
-    website: URL 2
-    affiliation: Affiliation 2
-  - name: "Storm Tracking Cookbook contributors" # use the 'name' field to acknowledge organizations
+  - family-names: Kukulies
+    given-names: Julia
+    orcid: https://orcid.org/0000-0001-6084-0069
+    website: https://juliakukulies.github.io/
+    affiliation: NSF National Center for Atmospheric Research 
+  - family-names: Eroglu
+    given-names: Orhan
+    orcid: https://orcid.org/0000-0003-3099-8775
+    affiliation: NSF National Center for Atmospheric Research 
+  - name: "tobac community, Project Pythia" # use the 'name' field to acknowledge organizations
     website: "https://github.com/ProjectPythia/storm-tracking-cookbook/graphs/contributors"
-title: "Storm Tracking Cookbook"
-abstract: "The cookbook description."
+title:"Tracking and Object-Based Analysis of Clouds in Global Km-scale Model Simulations"
+abstract: " This cookbook demonstrates how to regrid high-resolution (km-scale), unstructured output from the MPAS weather and climate model and apply the tobac tracking algorithm to identify and analyze storm systems. It offers a practical workflow for integrating object-based storm tracking with km-scale global climate simulations."
